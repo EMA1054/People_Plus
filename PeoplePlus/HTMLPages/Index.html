@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="app">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../Backgrounds.css" />
+</head>
+<body ng-controller="Main as vm">
+    <center>
+        <div id="top"><font face="lucida calligraphy" size="6" color="black"><h1>Mindful Oversight</h1></font></div>
+        <div id="bottom">
+            <font face="lucida calligraphy" size="3" color="black"><h1>Sign In<br /><br /></h1></font>
+            <!-- Currently I have it where once you hit the sign in button it goes straight to the manager -->
+            <!-- home page so I could check to see how it was looking, that can easily be changed. -->
+            <input type="text" ng-model="vm.un" placeholder="Enter Username" />
+            <br /><input type="text" ng-model="vm.pw" placeholder="Enter Password" />
+            <br /><br /><button type="button" onclick="location.href='ManagerHome.html';">Sign In</button>
+            <br /><p><a href="Register.html" style="color:black">Register</a></p>
+            <p><a href="ForgotInfo.html" style="color:black">Forgot Username/Password</a></p>
+        </div>
+</center>
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/main.js"></script>
+
+</body>
+</html>

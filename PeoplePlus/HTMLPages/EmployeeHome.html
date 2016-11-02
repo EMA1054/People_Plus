@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="app">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../Backgrounds.css" />
+</head>
+<body ng-controller="Main as vm">
+    <div id="top">
+        <font size="3" color="black">
+            <p style="text-align:left;">
+                Mindful Oversight
+                <span style="float:right;"><a href="Index.html" style="color:black">Log Off</a></span>
+            </p>
+        </font>
+        <!-- My idea here was instead of John Doe have the employees name once we have that information -->
+        <center>
+            <font face="lucida calligraphy" size="5" color="black"><h1>Welcome John Doe<br /></h1></font>
+        </center>
+    </div>
+    <!-- I was thinking instead of creating a new page for each of the options in the drop down box, -->
+    <!-- we could have what we want appear and disappear on this page in the empty space. Assuming  -->
+    <!-- we even keep the drop down boxes, clearly nothing here is set in stone. I have this same  -->
+    <!-- comment writen in the manager page. -->
+    <div id="bottom">
+        <p><a href="" style="color:black">Employee Information</a></p>
+        <p><a href="" style="color:black">Past Alerts</a></p>
+        <p><a href="" style="color:black">Past Batch Analysis Stuff</a></p>
+        <p><a href="" style="color:black">Heart Rate</a></p>
+
+        <script>
+            document.getElementById('my_selection').onchange = function () {
+                window.location.href = this.children[this.selectedIndex].getAttribute('href');
+            }
+        </script>
+    </div>
+
+        <script src="Scripts/angular.min.js"></script>
+        <script src="app/app.module.js"></script>
+        <script src="app/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="app">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../Backgrounds.css" />
+</head>
+<body ng-controller="Main as vm">
+    <center>
+        <div id="top"><br /><font face="lucida calligraphy" size="5" color="black"><h1>Forgot Username/Password<br /></h1></font></div>
+        <!-- What I was going for here was once you type in some security question and hit the done button then -->
+        <!-- your sign in information would appear above the back to login page button. So at some point we will -->
+        <!-- need to ask the employees for a security question or something. I really dont want to figure out how -->
+        <!-- to send some sort of email with the information on it because thats what normally happens but I can -->
+        <!-- if yall want me to. -->
+        <div id="bottom">
+            <p>Please enter your name and Employee Number</p><br />
+            <input type="text" ng-model="vm.fn" placeholder="First Name" />
+            <br /><input type="text" ng-model="vm.ln" placeholder="Last Name" />
+            <br /><input type="text" ng-model="vm.en" placeholder="Employee Number" />
+            <br /><br /><button type="button" onclick="">Done</button>
+            <br /><p>Here is your Username and Password:</p>
+            <br /><br /><button type="button" onclick="location.href='Index.html';">Back to Login Page</button>
+        </div>
+</center>
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/main.js"></script>
+
+</body>
+</html>

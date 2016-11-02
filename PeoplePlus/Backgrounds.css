@@ -1,0 +1,25 @@
+﻿html {
+    background-color: lightskyblue;
+}
+body {
+    }
+#top {
+		position: fixed;
+		left: 0;
+		right: 0;
+		height: 30%;
+	}
+#bottom {
+		position: fixed;
+		left: 0;
+		right: 0;
+		height: 70%;
+	}	
+#top {
+		top: 0;
+		background: linear-gradient(to bottom, blue, lightskyblue);
+	}
+#bottom {
+		bottom: 0;
+		background-color: lightskyblue;
+	}
